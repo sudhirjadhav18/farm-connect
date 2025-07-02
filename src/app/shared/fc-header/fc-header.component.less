@@ -6,10 +6,31 @@
   background: #f5f5f5;
   padding: 1rem;
   text-align: center;
+  font-size: 1.1rem;
 
   /* BLOCK: fc-header-menu */
   &-menu {
     display: flex;
-    gap: 2rem;
+    line-height: 1.8rem;
+
+    /* BLOCK: fc-header-menu-download */
+    &-download {
+      display: flex;
+      gap: 0.5rem;
+
+      /* ELEMENT: fc-header-menu-download__icon */
+      &__icon {
+        height: 1.8rem;
+      }
+    }
+
+    /* ELEMENT: fc-header-menu__item */
+    &__item {
+      padding: 0 10px;
+
+      &:not(:last-child) {
+        border-right: 2px solid #aaaaaa;
+      }
+    }
   }
 }
